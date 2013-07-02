@@ -17,20 +17,15 @@ class NestedFormatterHelper extends FormatterHelper
 	 * @param array $hashmap
 	 * @return string
 	 */
-	public function format(array $hashmap)
+	public function format(array $hashmap, $indentLevel = 0)
 	{
-		return $this->formatLevel($hashmap, 0);
-	}
-
-	private function formatLevel(array $hashmap, $level)
-	{
-		$prefix = str_repeat(' ', 2 * $level);
+		$prefix = str_repeat(' ', 2 * $indentLevel);
 		$output = '';
 		$isAssocArray = $this->isAssocArray($hashmap);
 		foreach ($hashmap as $key => $value) {
 			if (is_array($value)) {
 				$output .= sprintf("$prefix%s\n", $isAssocArray ? "$key:" : '-');
-				$output .= $this->formatLevel($value, $level + 1);
+				$output .= $this->format($value, $indentLevel + 1);
 			} else {
 				$output .= sprintf("$prefix%s\n", $isAssocArray ? "$key: $value" : "- $value");
 			}

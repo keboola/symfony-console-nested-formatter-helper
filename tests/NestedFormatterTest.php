@@ -32,6 +32,22 @@ class NestedFormatterTest extends \PHPUnit_Framework_TestCase
 		$this->assertEquals($expected, $formatter->format($input));
 	}
 
+	public function testDefaultIndent()
+	{
+		$formatter = new NestedFormatterHelper();
+
+		$input = array(
+			'first' => 'something',
+			'second' => 'another',
+			'third' => 'haha',
+		);
+		$expected = "  first: something\n";
+		$expected .= "  second: another\n";
+		$expected .= "  third: haha\n";
+
+		$this->assertEquals($expected, $formatter->format($input, 1));
+	}
+
 	public function testOneLevelNumericArray()
 	{
 		$formatter = new NestedFormatterHelper();
