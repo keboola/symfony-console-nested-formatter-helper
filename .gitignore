@@ -2,3 +2,4 @@
 cache.properties
 composer.lock
 vendor
+.DS_Store
