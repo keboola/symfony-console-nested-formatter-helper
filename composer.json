@@ -16,7 +16,7 @@
     ],
 	"autoload": {
 		"psr-0": {
-			"Keboola\\SymfonyNestedFormatterHelper": "src/"
+			"Keboola\\Symfony\\Console\\Helper\\NestedFormatterHelper": "src/"
 		}
 	}
 }

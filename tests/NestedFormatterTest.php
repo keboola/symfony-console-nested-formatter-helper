@@ -7,9 +7,10 @@
  * To change this template use File | Settings | File Templates.
  */
 
-namespace Keboola\SymfonyNestedFormatterHelper\Tests;
+namespace Keboola\Symfony\Console\Helper\NestedFormatterHelper\Tests;
 
-use Keboola\SymfonyNestedFormatterHelper\NestedFormatterHelper;
+
+use Keboola\Symfony\Console\Helper\NestedFormatterHelper\NestedFormatterHelper;
 
 class NestedFormatterTest extends \PHPUnit_Framework_TestCase
 {

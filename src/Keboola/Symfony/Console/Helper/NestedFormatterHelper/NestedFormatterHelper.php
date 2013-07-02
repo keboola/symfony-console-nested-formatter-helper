@@ -4,10 +4,9 @@
  * User: martinhalamicek
  * Date: 7/2/13
  * Time: 1:22 PM
- * To change this template use File | Settings | File Templates.
  */
 
-namespace Keboola\SymfonyNestedFormatterHelper;
+namespace Keboola\Symfony\Console\Helper\NestedFormatterHelper;
 
 use Symfony\Component\Console\Helper\FormatterHelper;
 
