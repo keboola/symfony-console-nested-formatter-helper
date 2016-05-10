@@ -2,7 +2,7 @@
     "name": "keboola/symfony-console-nested-formatter-helper",
     "description": "Nested array formatter helper for Symfony Console",
     "require": {
-        "symfony/console": "3.0.*"
+        "symfony/console": "2.8.*"
     },
     "require-dev": {
         "phpunit/phpunit": "4.8.*"
